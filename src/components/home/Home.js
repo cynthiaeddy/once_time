@@ -24,7 +24,8 @@ const Home = (props) => {
         transitionTime={1000}
         showIndicators={false}
         showStatus={false}
-        showArrows={false}>
+        showArrows={false}
+        showIndicators>
         {mySlides}
       </Carousel>
       <div className='overlay'></div>
