@@ -4,6 +4,7 @@ import './App.css'
 import Home from './components/home/Home'
 import Header from './components/Header'
 import HeroCarousel from './components/HeroCarousel'
+import MasonryGrid from './components/MasonryGrid'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -40,6 +41,10 @@ class App extends React.Component {
         <Header />
         {/* <Home /> */}
         <HeroCarousel slides={this.state.articles.hero_slides} />
+        <MasonryGrid
+          text={this.state.articles.hero_text}
+          cards={this.state.articles.cards}
+        />
       </div>
     )
   }

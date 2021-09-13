@@ -19,9 +19,7 @@ a {
   max-width: 1440px;
   width: 1440px;
 }
-ul.control-dots {
-  color: yellow;
-}
+
 .carousel ul.control-dots {
   position: relative;
   left: 47%;
@@ -34,10 +32,3 @@ ul.control-dots {
   width: 10px;
   height: 10px;
 }
-/* li.dot {
-  background: red;
-} */
-/* div.carousel.carousel-slider .control-dots li.dot {
-  background: red;
-  box-shadow: none;
-} */
