@@ -5,6 +5,7 @@ import Home from './components/home/Home'
 import Header from './components/Header'
 import HeroCarousel from './components/HeroCarousel'
 import MasonryGrid from './components/MasonryGrid'
+import Footer from './components/Footer'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
@@ -45,6 +46,7 @@ class App extends React.Component {
           text={this.state.articles.hero_text}
           cards={this.state.articles.cards}
         />
+        <Footer />
       </div>
     )
   }
