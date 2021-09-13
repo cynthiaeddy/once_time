@@ -66,7 +66,7 @@ class Footer extends React.Component {
               <form
                 className='form'
                 onSubmit={(e) => this.handleSubmit(e, this.state.email)}>
-                <pre>
+                <pre id='val-style'>
                   <span> </span>
                   <input
                     type='text'
@@ -88,10 +88,7 @@ class Footer extends React.Component {
                     {this.state.emailError}
                   </span>
                 </pre>
-                <button
-                  // onChange={this.updateEmail}
-                  type='submit'
-                  className='btn'>
+                <button type='submit' className='btn'>
                   Submit
                 </button>
               </form>
@@ -100,12 +97,11 @@ class Footer extends React.Component {
         </div>
 
         <h6 className='newsletter-footer'>
-          {' '}
           <span id='footer-span'>
-            <a>@2021 — SPARTA PLAESENT</a>{' '}
-          </span>{' '}
-          - <a href='#'>INSTAGRAM</a> - <a href='#'>FACEBOOK</a> -{' '}
-          <a href='#'>TWITTER</a>{' '}
+            <a>@2021 — SPARTA PLAESENT</a>
+          </span>
+          - <a href='#'>INSTAGRAM</a> - <a href='#'>FACEBOOK</a> -
+          <a href='#'>TWITTER</a>
         </h6>
       </>
     )

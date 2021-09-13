@@ -37,6 +37,7 @@ input {
   width: 262px;
   font-size: 14px;
   padding-left: 20px;
+  margin-right: -10px;
 }
 .newsletter-info p {
   margin: 18px;
@@ -61,6 +62,7 @@ input {
   padding-bottom: 80px;
   margin-right: 0;
   text-align: center;
+  margin-left: 10px;
 }
 .newsletter-footer a {
   border-bottom: 1px solid #000;
@@ -79,8 +81,16 @@ select:focus,
 textarea:focus,
 button:focus {
   outline: none;
+  background: none;
 }
 
+.form-control:focus,
+.form-control:active {
+  background: transparent;
+}
+#val-style {
+  margin: 0;
+}
 .newsletter-footer {
   animation: 0.2s ease-in delayLoad;
 }
