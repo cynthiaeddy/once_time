@@ -3,14 +3,46 @@ import './App.css'
 
 import Home from './components/home/Home'
 import Header from './components/Header'
+import HeroCarousel from './components/HeroCarousel'
 
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 
-const App = () => (
-  <div id='container'>
-    <Header />
-    <Home />
-  </div>
-)
+class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      articles: [],
+    }
+  }
+  async componentDidMount() {
+    try {
+      const response = await fetch(
+        `https://s0nshulo19.execute-api.us-east-1.amazonaws.com/default/code-challenge`,
+        { method: 'GET' }
+      )
+      const responseData = await response.json()
+      console.log('fetchArticles() resp data', responseData)
+
+      if (!response.ok) {
+        throw new Error(response.message)
+      }
+      this.setState({
+        articles: responseData,
+      })
+    } catch (error) {
+      return error
+    }
+  }
+
+  render() {
+    return (
+      <div id='container'>
+        <Header />
+        {/* <Home /> */}
+        <HeroCarousel slides={this.state.articles.hero_slides} />
+      </div>
+    )
+  }
+}
 
 export default App
