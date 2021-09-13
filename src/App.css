@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.container {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 50px;
+  display: flex;
+  z-index: 1;
+}
+.secondary-wrapper {
+  height: 100%;
+  width: 90%;
+  margin-left: 6.5%;
+  margin-top: 7%;
+  z-index: 1;
+
+
+
+
+}

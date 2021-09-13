@@ -1,0 +1,75 @@
+li {
+  list-style: none;
+}
+li a {
+  text-decoration: none;
+  color: #767676;
+}
+li a:visited,
+li a:hover,
+li a:focus {
+  color: #767676;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+.header {
+  height: 122px;
+  width: 100vw;
+  background: #fff;
+  position: fixed;
+  z-index: 10;
+}
+.navBar {
+  width: 81%;
+  height: 100%;
+  max-width: 1166px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggle.menu-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  padding-top: 12px;
+  margin-right: -35px;
+}
+
+.topLine,
+.middleLine,
+.bottomLine {
+  width: 20px;
+  height: 1px;
+  position: absolute;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: #000;
+}
+
+.topLine {
+  margin-top: -12px;
+}
+.middleLine {
+  margin-top: -6px;
+}
+.bottomLine {
+  margin-top: 0px;
+}
+
+.logo {
+  position: relative;
+  left: 0%;
+  transform: translateX(0%);
+  width: 200px;
+  object-fit: fill;
+  height: inherit;
+}
