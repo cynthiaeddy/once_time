@@ -10,11 +10,9 @@ const Home = () => (
       showThumbs={false}
       infiniteLoop
       autoPlay
-      interval={4000}
+      interval={5000}
       transitionTime={1000}
       showIndicators={false}
-      //  centerMode
-      //  centerSlidePercentage={50}
       showStatus={false}
       showArrows={false}>
       <div>
@@ -37,6 +35,7 @@ const Home = () => (
         />
       </div>
     </Carousel>
+    <div className='overlay'></div>
   </div>
 )
 export default Home
