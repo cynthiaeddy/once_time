@@ -12,21 +12,7 @@ class HeroCarousel extends React.Component {
     if (!this.props.slides) {
       return null
     }
-    return (
-      <>
-        <Home />
-        {/* // <main className='carousel-container'> */}
-        {/* <div className='hero-image'> */}
-        {/* <img
-              className='big'
-              src='https://iws-misc.s3.amazonaws.com/code-challenge/hero-landing-1.jpg'
-              alt='runway'></img> */}
-        {this.renderSlides()}
-        {/* <div className='overlay'></div> */}
-        {/* </div> */}
-        {/* // </main> */}
-      </>
-    )
+    return <>{this.renderSlides()}</>
   }
 }
 

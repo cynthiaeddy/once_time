@@ -5,7 +5,15 @@ import { Link } from 'react-router-dom'
 import './Home.css'
 
 const Home = (props) => {
-  console.log(props)
+  console.log('in slide', props)
+  let mySlides = props.slides.map((slide, idx) => {
+    return (
+      <div key={idx}>
+        <img src={slide.image} alt={slide.alt} />
+      </div>
+    )
+  })
+  console.log(mySlides)
   return (
     <div className='carousel-wrapper'>
       <Carousel
@@ -17,25 +25,7 @@ const Home = (props) => {
         showIndicators={false}
         showStatus={false}
         showArrows={false}>
-        <div>
-          <img
-            src='https://iws-misc.s3.amazonaws.com/code-challenge/hero-landing-1.jpg'
-            className='prints'
-            alt=''
-          />
-        </div>
-        <div>
-          <img
-            src='https://iws-misc.s3.amazonaws.com/code-challenge/hero-landing-2.jpg'
-            alt=''
-          />
-        </div>
-        <div>
-          <img
-            src='https://iws-misc.s3.amazonaws.com/code-challenge/hero-landing-3.jpg'
-            alt=''
-          />
-        </div>
+        {mySlides}
       </Carousel>
       <div className='overlay'></div>
     </div>
