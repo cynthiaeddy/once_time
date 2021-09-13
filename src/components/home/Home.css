@@ -1,9 +1,9 @@
 .carousel-wrapper {
-
-  margin-left: 6.5%;
-  margin-right: 6%;
-  margin-top: 7%;
-
+  height: 580px;
+  max-width: 1440px;
+  width: 1440px;
+  margin: auto;
+  margin-top: 122px;
 }
 a {
   display: block;
