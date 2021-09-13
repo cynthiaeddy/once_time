@@ -73,19 +73,14 @@ input {
 #userEmail {
   border: 1px solid black;
 }
-/* pre {
-  margin: 0;
-  width: 270px;
-} */
+
 input:focus,
 select:focus,
 textarea:focus,
 button:focus {
   outline: none;
 }
-/* #footer-span {
-  position: relative;
-} */
+
 .newsletter-footer {
   animation: 0.2s ease-in delayLoad;
 }
