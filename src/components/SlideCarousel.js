@@ -1,10 +1,8 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import { Link } from 'react-router-dom'
+import '../stylesheets/HeroCarousel.css'
 
-import '../stylesheets/Home.css'
-
-const Home = (props) => {
+const SlideCarousel = (props) => {
   console.log('in slide', props)
   let mySlides = props.slides.map((slide, idx) => {
     return (
@@ -32,4 +30,4 @@ const Home = (props) => {
     </div>
   )
 }
-export default Home
+export default SlideCarousel

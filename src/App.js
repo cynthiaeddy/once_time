@@ -1,7 +1,5 @@
 import React from 'react'
 import './App.css'
-
-import Home from './components/Home'
 import Header from './components/Header'
 import HeroCarousel from './components/HeroCarousel'
 import MasonryGrid from './components/MasonryGrid'
@@ -40,7 +38,6 @@ class App extends React.Component {
     return (
       <div id='container'>
         <Header />
-        {/* <Home /> */}
         <HeroCarousel slides={this.state.articles.hero_slides} />
         <MasonryGrid
           text={this.state.articles.hero_text}
