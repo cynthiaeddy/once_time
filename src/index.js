@@ -9,6 +9,8 @@ import './fonts/ACaslonProRegular.woff'
 import './fonts/ACaslonProRegular.woff2'
 import './fonts/SpringvilleRegular3.woff'
 import './fonts/SpringvilleRegular3.woff2'
+import './fonts/ACaslonPro-Regular.otf'
+import './fonts/Springville-Regular3.otf'
 
 ReactDOM.render(
   <Router>

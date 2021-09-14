@@ -29,6 +29,16 @@
   src: local('SpringvilleRegular3'),
     url('./fonts/SpringvilleRegular3.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'SpringvilleRegular3';
+  src: local('Springville-Regular3'),
+    url('./fonts/Springville-Regular3.otf') format('otf');
+}
+@font-face {
+  font-family: 'ACaslonProRegular';
+  src: local('ACaslonPro-Regular'),
+    url('./fonts/ACaslonPro-Regular.otf') format('otf');
+}
 
 * {
   box-sizing: border-box;
