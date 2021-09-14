@@ -25,6 +25,8 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 0;
+  overscroll-behavior: none;
+  overflow: visible;
   /* overscroll-behavior: none; */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
@@ -77,4 +79,10 @@ a {
   position: absolute;
   overscroll-behavior: none;
   overflow-x: hidden;
+  overflow: hidden;
+}
+.inner-container {
+  overflow-y: scroll;
+  height: 100%;
+  position: relative;
 }

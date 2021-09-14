@@ -38,12 +38,14 @@ class App extends React.Component {
     return (
       <div id='container'>
         <Header />
-        <HeroCarousel slides={this.state.articles.hero_slides} />
-        <MasonryGrid
-          text={this.state.articles.hero_text}
-          cards={this.state.articles.cards}
-        />
-        <Footer />
+        <div className='inner-container'>
+          <HeroCarousel slides={this.state.articles.hero_slides} />
+          <MasonryGrid
+            text={this.state.articles.hero_text}
+            cards={this.state.articles.cards}
+          />
+          <Footer />
+        </div>
       </div>
     )
   }
