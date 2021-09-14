@@ -27,7 +27,7 @@ const SlideCarousel = (props) => {
         showIndicators>
         {mySlides}
       </Carousel>
-      {/* <div className='overlay'></div> */}
+      <div className='overlay'></div>
     </div>
   )
 }

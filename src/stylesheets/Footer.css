@@ -12,7 +12,7 @@
   width: 348px;
   justify-content: center;
   align-items: center;
-  display: flex;
+  display: inline-flex;
 }
 
 .btn,
@@ -20,8 +20,7 @@ input {
   font-family: 'ACaslonPro-Regular';
   font-weight: lighter;
 }
-.btn,
-#btn {
+.btn#btn {
   width: 96px;
   background: #000;
   height: 38px;
@@ -35,7 +34,7 @@ input {
 input {
   height: 38px;
   margin: 0;
-  width: 262px;
+  width: 200px;
   font-size: 14px;
   padding-left: 20px;
   margin-right: -10px;
@@ -111,5 +110,17 @@ button#userEmail .userEmail:focus {
   .newsletter {
     width: 320px;
     margin: auto;
+  }
+  input {
+    width: 200px;
+  }
+  button.btn#btn {
+    width: 60px;
+  }
+  pre .form input#userEmail.userEmail {
+    width: 100px;
+  }
+  form.form {
+    padding-right: 60px;
   }
 }

@@ -32,6 +32,7 @@ img.card-img {
   margin-right: auto;
   max-width: 1166px;
   margin-top: 805px;
+  overflow-x: hidden;
 }
 
 .masonry.bordered .card {
