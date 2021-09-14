@@ -1,45 +1,3 @@
-/* @font-face {
-  font-family: 'ACaslonProRegular';
-  src: local('ACaslonProRegular'),
-    url('./fonts/ACaslonProRegular.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'SpringvilleRegular3';
-  src: local('SpringvilleRegular3'),
-    url('./fonts/SpringvilleRegular3.ttf') format('truetype');
-}
-@font-face {
-  font-family: 'ACaslonProRegular';
-  src: local('ACaslonProRegular'),
-    url('./fonts/ACaslonProRegular.woff') format('woff');
-}
-@font-face {
-  font-family: 'ACaslonProRegular';
-  src: local('ACaslonProRegular'),
-    url('./fonts/ACaslonProRegular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'SpringvilleRegular3';
-  src: local('SpringvilleRegular3'),
-    url('./fonts/SpringvilleRegular3.woff') format('woff');
-}
-@font-face {
-  font-family: 'SpringvilleRegular3';
-  src: local('SpringvilleRegular3'),
-    url('./fonts/SpringvilleRegular3.woff2') format('woff2');
-}
-@font-face {
-  font-family: 'Springville-Regular3';
-  src: local('Springville-Regular3'),
-    url('./fonts/Springville-Regular3.otf') format('otf');
-}
-@font-face {
-  font-family: 'ACaslonPro-Regular';
-  src: local('ACaslonPro-Regular'),
-    url('./fonts/ACaslonPro-Regular.otf') format('otf');
-} */
-
 @font-face {
   font-family: 'ACaslonPro-Regular';
   src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
@@ -53,10 +11,10 @@
   font-family: 'Springville-Regular3';
   src: url('./fonts/Springville-Regular3.otf') format('opentype');
 }
-@font-face {
+/* @font-face {
   font-family: Springville-Regular3;
   src: url('./fonts/Springville-Regular3.otf') format('opentype');
-}
+} */
 
 * {
   box-sizing: border-box;
