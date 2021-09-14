@@ -2,10 +2,10 @@
   font-family: 'ACaslonPro-Regular';
   src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
 }
-@font-face {
+/* @font-face {
   font-family: ACaslonPro-Regular;
   src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
-}
+} */
 
 @font-face {
   font-family: 'Springville-Regular3';
@@ -25,9 +25,7 @@ body {
   font-weight: normal;
   margin: 0;
   padding: 0;
-  overscroll-behavior: none;
-  overflow: visible;
-  overflow-x: hidden;
+  /* overscroll-behavior: none; */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
@@ -77,4 +75,6 @@ a {
   height: 100vh;
   width: 100vw;
   position: absolute;
+  overscroll-behavior: none;
+  overflow-x: hidden;
 }
