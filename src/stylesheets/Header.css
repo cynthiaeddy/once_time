@@ -73,3 +73,13 @@ ul {
   object-fit: fill;
   height: inherit;
 }
+
+/* Header on mobile */
+@media (max-width: 480px) {
+  .header {
+    height: 50px;
+  }
+  li a {
+    display: none;
+  }
+}

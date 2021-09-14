@@ -80,18 +80,39 @@ h2 a:hover {
   text-decoration-thickness: 3px;
 }
 
-/* Masonry on mobile */
-@media (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 480px) {
+  .masonry-container {
+    margin-top: -110px;
+  }
+  p.pHero {
+    width: 90%;
+  }
+  h1 {
+    font-size: 50px;
+  }
   .masonry {
     column-count: 1;
   }
   img.card-img {
     width: 600px;
   }
+  h2 {
+    font-size: 35px;
+  }
 }
 
+/* Masonry on mobile */
+/* @media (max-width: 767px) {
+  .masonry {
+    column-count: 1;
+  }
+  img.card-img {
+    width: 600px;
+  }
+} */
+
 /* Masonry on tablets */
-@media only screen and (min-width: 768px) and (max-width: 1023px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
   .masonry {
     column-count: 2;
   }

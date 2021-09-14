@@ -35,3 +35,24 @@
   color: #fff;
   top: 340px;
 }
+/* Carousel 4:3 ratio */
+@media (max-width: 775px) {
+  /* .carousel-wrapper {
+    width: 100%;
+    padding-bottom: 75%;
+  } */
+
+  .carousel-wrapper,
+  .carousel,
+  .carousel > .slider-wrapper,
+  .carousel > .slider-wrapper > .slider {
+    /* height: 100%; */
+    /* width: 100%; */
+    /* padding-bottom: 75%; */
+  }
+}
+@media (max-width: 480px) {
+  .carousel-wrapper {
+    margin-top: 50px;
+  }
+}

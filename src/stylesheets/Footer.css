@@ -106,3 +106,10 @@ button#userEmail .userEmail:focus {
     opacity: 1;
   }
 }
+
+@media (min-width: 320px) and(max-width: 480px) {
+  .newsletter {
+    width: 320px;
+    margin: auto;
+  }
+}
