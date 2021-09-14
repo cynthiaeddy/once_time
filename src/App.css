@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'ACaslonProRegular';
   src: local('ACaslonProRegular'),
     url('./fonts/ACaslonProRegular.ttf') format('truetype');
@@ -38,6 +38,24 @@
   font-family: 'ACaslonPro-Regular';
   src: local('ACaslonPro-Regular'),
     url('./fonts/ACaslonPro-Regular.otf') format('otf');
+} */
+
+@font-face {
+  font-family: 'ACaslonPro-Regular';
+  src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
+}
+@font-face {
+  font-family: ACaslonPro-Regular;
+  src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Springville-Regular3';
+  src: url('./fonts/Springville-Regular3.otf') format('opentype');
+}
+@font-face {
+  font-family: Springville-Regular3;
+  src: url('./fonts/Springville-Regular3.otf') format('opentype');
 }
 
 * {
