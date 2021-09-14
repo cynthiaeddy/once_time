@@ -1,13 +1,14 @@
 @font-face {
   font-family: 'ACaslonProRegular';
-  src: url('./fonts/ACaslonProRegular.woff2') format('woff2'),
-    url('./fonts/ACaslonProRegular.woff') format('woff');
+  src: local('ACaslonProRegular'),
+    url('./fonts/ACaslonProRegular.ttf') format('truetype');
 }
 @font-face {
   font-family: 'SpringvilleRegular3';
-  src: url('./fonts/SpringvilleRegular3.woff2') format('woff2'),
-    url('./fonts/SpringvilleRegular3.woff') format('woff');
+  src: local('SpringvilleRegular3'),
+    url('./fonts/SpringvilleRegular3.ttf') format('truetype');
 }
+
 * {
   box-sizing: border-box;
 }

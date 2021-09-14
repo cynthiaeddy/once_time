@@ -123,4 +123,8 @@ button#userEmail .userEmail:focus {
   form.form {
     padding-right: 60px;
   }
+  .newsletter-footer {
+    width: 250px;
+    line-height: 1.5;
+  }
 }
