@@ -76,7 +76,7 @@ a {
 #container {
   height: 100vh;
   width: 100vw;
-  position: absolute;
+  position: fixed;
   overscroll-behavior: none;
   overflow-x: hidden;
   overflow: hidden;
