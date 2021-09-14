@@ -84,5 +84,7 @@ a {
 .inner-container {
   overflow-y: scroll;
   height: 100%;
-  position: relative;
+  position: absolute;
+  width: 100%;
+  overflow-x: hidden;
 }
