@@ -30,12 +30,12 @@
     url('./fonts/SpringvilleRegular3.woff2') format('woff2');
 }
 @font-face {
-  font-family: 'SpringvilleRegular3';
+  font-family: 'Springville-Regular3';
   src: local('Springville-Regular3'),
     url('./fonts/Springville-Regular3.otf') format('otf');
 }
 @font-face {
-  font-family: 'ACaslonProRegular';
+  font-family: 'ACaslonPro-Regular';
   src: local('ACaslonPro-Regular'),
     url('./fonts/ACaslonPro-Regular.otf') format('otf');
 }
