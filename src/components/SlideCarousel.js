@@ -8,7 +8,7 @@ const SlideCarousel = (props) => {
     return (
       <div key={idx}>
         <img src={slide.image} alt={slide.alt} />
-        <div className='overlay'></div>
+        {/* <div className='overlay'></div> */}
       </div>
     )
   })
