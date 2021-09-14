@@ -80,10 +80,23 @@ h2 a:hover {
   text-decoration-thickness: 3px;
 }
 
+/* Masonry on mobile */
+@media (max-width: 767px) {
+  .masonry {
+    column-count: 1;
+  }
+  img.card-img {
+    width: 600px;
+  }
+}
+
 /* Masonry on tablets */
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
   .masonry {
     column-count: 2;
+  }
+  .masonry.bordered {
+    column-gap: 12%;
   }
 }
 

@@ -18,6 +18,7 @@ const SlideCarousel = (props) => {
         showThumbs={false}
         infiniteLoop
         autoPlay
+        swipeable
         interval={5000}
         transitionTime={1000}
         showIndicators={false}
@@ -26,7 +27,7 @@ const SlideCarousel = (props) => {
         showIndicators>
         {mySlides}
       </Carousel>
-      <div className='overlay'></div>
+      {/* <div className='overlay'></div> */}
     </div>
   )
 }
