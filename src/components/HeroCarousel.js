@@ -1,7 +1,7 @@
 import React from 'react'
 // import '../stylesheets/HeroCarousel.css'
 // import SlideCarousel from './SlideCarousel'
-import Home from './home/Home'
+import Home from './Home'
 
 class HeroCarousel extends React.Component {
   renderSlides() {
