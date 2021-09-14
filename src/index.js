@@ -5,6 +5,10 @@ import './index.css'
 import App from './App'
 import './fonts/ACaslonProRegular.ttf'
 import './fonts/SpringvilleRegular3.ttf'
+import './fonts/ACaslonProRegular.woff'
+import './fonts/ACaslonProRegular.woff2'
+import './fonts/SpringvilleRegular3.woff'
+import './fonts/SpringvilleRegular3.woff2'
 
 ReactDOM.render(
   <Router>

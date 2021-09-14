@@ -8,6 +8,27 @@
   src: local('SpringvilleRegular3'),
     url('./fonts/SpringvilleRegular3.ttf') format('truetype');
 }
+@font-face {
+  font-family: 'ACaslonProRegular';
+  src: local('ACaslonProRegular'),
+    url('./fonts/ACaslonProRegular.woff') format('woff');
+}
+@font-face {
+  font-family: 'ACaslonProRegular';
+  src: local('ACaslonProRegular'),
+    url('./fonts/ACaslonProRegular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'SpringvilleRegular3';
+  src: local('SpringvilleRegular3'),
+    url('./fonts/SpringvilleRegular3.woff') format('woff');
+}
+@font-face {
+  font-family: 'SpringvilleRegular3';
+  src: local('SpringvilleRegular3'),
+    url('./fonts/SpringvilleRegular3.woff2') format('woff2');
+}
 
 * {
   box-sizing: border-box;
