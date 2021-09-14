@@ -9,6 +9,7 @@ class Footer extends React.Component {
     this.state = {
       email: '',
       emailError: '',
+      isSuccessfullySubmitted: false,
     }
   }
 
@@ -30,6 +31,11 @@ class Footer extends React.Component {
       console.log(response)
       if (!response.ok) {
         throw new Error('Could not save email')
+      } else {
+        this.setState({
+          isSuccessfullySubmitted: true,
+        })
+        alert('Thank you for subscribing')
       }
     } catch (err) {
       console.log(err)
@@ -40,8 +46,6 @@ class Footer extends React.Component {
     this.setState({
       email: e.target.value,
     })
-
-    // [e.target.email] = e.target.value
   }
 
   validateEmail = (e) => {
@@ -66,11 +70,12 @@ class Footer extends React.Component {
               <form
                 className='form'
                 onSubmit={(e) => this.handleSubmit(e, this.state.email)}>
-                <pre id='val-style'>
+                <pre>
                   <span> </span>
                   <input
                     type='text'
                     id='userEmail'
+                    className='userEmail'
                     placeholder='Email'
                     onChange={(e) => {
                       this.updateEmail(e)
@@ -84,11 +89,18 @@ class Footer extends React.Component {
                       position: 'absolute',
                       margin: 'auto',
                       maxRight: '45%',
+                      lineHeight: '2',
                     }}>
                     {this.state.emailError}
                   </span>
                 </pre>
-                <button type='submit' className='btn'>
+                <button
+                  type='submit'
+                  // onSubmit={(e) =>
+                  //   this.handleSubmit(e, this.state.isSuccessfullySubmitted)
+                  // }
+                  className='btn'
+                  id='btn'>
                   Submit
                 </button>
               </form>
