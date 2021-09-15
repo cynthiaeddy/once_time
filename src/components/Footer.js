@@ -98,6 +98,12 @@ class Footer extends React.Component {
                   Submit
                 </button>
               </form>
+              <div className='successful-submit'>
+                hi
+                {this.state.isSuccessfullySubmitted
+                  ? 'Thank you for subscribing'
+                  : ''}
+              </div>
             </div>
           </div>
         </div>

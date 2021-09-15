@@ -14,17 +14,13 @@ p.hero-p {
 .hero-copy {
   position: absolute;
   color: #fff;
-  top: 330px;
+  top: 340px;
 }
 .masonry-container {
   width: 81%;
   max-width: 1166px;
   margin: auto;
   margin-top: 100px;
-}
-img.card-img {
-  max-width: 100%;
-  vertical-align: middle;
 }
 
 .wrapper {
@@ -35,17 +31,10 @@ img.card-img {
   overflow-x: hidden;
 }
 
-.masonry.bordered .card {
-  padding-bottom: 35px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #dbdbdb;
-}
-/* Defaults */
-
 /* Masonry grid */
 .masonry {
   transition: all 0.5s ease-in-out;
-  column-gap: 30px;
+  column-gap: 55px;
   column-fill: initial;
 }
 
@@ -54,11 +43,14 @@ img.card-img {
   margin-bottom: 30px;
   display: inline-block; /* Fix the misalignment of items */
   vertical-align: top; /* Keep the item on the very top */
+  padding-bottom: 35px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dbdbdb;
 }
 
-/* Bordered masonry */
-.masonry.bordered {
-  column-gap: 55px;
+img.card-img {
+  max-width: 100%;
+  vertical-align: middle;
 }
 
 .card h6 {
@@ -109,8 +101,6 @@ h2 a:hover {
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .masonry {
     column-count: 2;
-  }
-  .masonry.bordered {
     column-gap: 12%;
   }
 }
