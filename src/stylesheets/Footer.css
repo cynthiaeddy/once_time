@@ -99,13 +99,7 @@ input {
     opacity: 1;
   }
 }
-@media screen and (max-width: 480px) {
-  _::-webkit-full-page-media,
-  _:future,
-  :root .safari_only {
-    padding-bottom: 180px;
-  }
-}
+
 /* @media (min-width: 320px) and(max-width: 480px) { */
 /* a {
     line-height: 2;

@@ -38,7 +38,7 @@ class App extends React.Component {
     return (
       <div id='container'>
         <Header />
-        <div className='inner-container'>
+        <div className='inner-container safari-only'>
           <HeroCarousel slides={this.state.articles.hero_slides} />
           <MasonryGrid
             text={this.state.articles.hero_text}

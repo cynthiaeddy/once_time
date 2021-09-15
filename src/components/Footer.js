@@ -4,13 +4,10 @@ import validator from 'validator'
 import '../stylesheets/Footer.css'
 
 class Footer extends React.Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      email: '',
-      emailError: '',
-      isSuccessfullySubmitted: false,
-    }
+  state = {
+    email: '',
+    emailError: '',
+    isSuccessfullySubmitted: false,
   }
 
   async handleSubmit(e, email) {
@@ -96,7 +93,7 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <h6 className='newsletter-footer safari-only'>
+        <h6 className='newsletter-footer '>
           <span id='footer-span'>
             <a>@2021 — SPARTA PLAESENT</a>
           </span>

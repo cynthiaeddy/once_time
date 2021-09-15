@@ -3,7 +3,6 @@ import { Carousel } from 'react-responsive-carousel'
 import '../stylesheets/HeroCarousel.css'
 
 const SlideCarousel = (props) => {
-  console.log('in slide', props)
   let mySlides = props.slides.map((slide, idx) => {
     return (
       <div key={idx}>

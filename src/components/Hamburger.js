@@ -7,7 +7,6 @@ const Hamburger = () => {
   return (
     <div>
       <button className='toggle menu-button'>
-        {/* onClick={this.props.click}> */}
         <div className={topClass} />
         <div className={midClass} />
         <div className={bottomClass} />
