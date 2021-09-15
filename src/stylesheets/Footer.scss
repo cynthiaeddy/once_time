@@ -76,7 +76,7 @@ input {
   color: grey;
   position: absolute;
   margin: auto;
-  left: 40%;
+  left: 45%;
   line-height: 2;
 }
 .form-control:focus,
@@ -97,5 +97,22 @@ input {
   }
   100% {
     opacity: 1;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+  .validate {
+    left: 40%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .validate {
+    left: 38%;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .validate {
+    left: 25%;
   }
 }
