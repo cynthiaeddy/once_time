@@ -85,14 +85,22 @@ input {
   /* outline-color: rgb(163, 153, 153); */
   outline-width: 0;
 }
-
+.validate {
+  font-weight: bold;
+  color: grey;
+  position: absolute;
+  margin: auto;
+  left: 40%;
+  line-height: 2;
+}
 .form-control:focus,
 .form-control:active {
   background: transparent;
 }
 
-.newsletter-footer {
-  animation: 0.2s ease-in delayLoad;
+.newsletter-footer,
+.newsletter-info {
+  animation: 0.5s ease-in delayLoad;
 }
 @keyframes delayLoad {
   0% {
@@ -127,13 +135,4 @@ input {
     width: 250px;
     line-height: 1.5;
   }
-}
-
-.validate {
-  font-weight: bold;
-  color: grey;
-  position: absolute;
-  margin: auto;
-  left: 40%;
-  line-height: 2;
 }

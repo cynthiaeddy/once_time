@@ -38,7 +38,6 @@ class Footer extends React.Component {
         this.setState({
           emailError: 'Thank you for subscribing',
         })
-        // alert('Thank you for subscribing')
       }
     } catch (err) {
       console.log(err)
@@ -87,28 +86,12 @@ class Footer extends React.Component {
                       this.validateEmail(e.target.value)
                     }}></input>{' '}
                   <br />
-                  <span className='validate'>
-                    {/* style={{
-                      fontWeight: 'bold',
-                      color: 'grey',
-                      position: 'absolute',
-                      margin: 'auto',
-                      maxRight: '45%',
-                      lineHeight: '2',
-                    }}> */}
-                    {this.state.emailError}
-                  </span>
+                  <span className='validate'>{this.state.emailError}</span>
                 </pre>
                 <button type='submit' className='btn'>
                   Submit
                 </button>
               </form>
-              <div className='successful-submit'>
-                {/* hi */}
-                {/* {this.state.isSuccessfullySubmitted
-                  ? 'Thank you for subscribing'
-                  : ''} */}
-              </div>
             </div>
           </div>
         </div>
