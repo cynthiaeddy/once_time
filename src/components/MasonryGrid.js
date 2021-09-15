@@ -56,7 +56,7 @@ class MasonryGrid extends React.Component {
             <p className='hero-p'>{this.props.text.subtitle}</p>
           </div>
           <div className='wrapper'>
-            <div className='masonry bordered'>{this.renderCards()}</div>
+            <div className='masonry'>{this.renderCards()}</div>
           </div>
         </div>
       </>
