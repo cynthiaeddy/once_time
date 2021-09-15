@@ -75,11 +75,17 @@ ul {
 }
 
 /* Header on mobile */
-@media (max-width: 480px) {
+@media (min-width: 320px) and (max-width: 480px) {
   .header {
     height: 50px;
   }
-  li a {
-    display: none;
+  .logo {
+    width: 110px;
+  }
+  h6 {
+    margin-right: 10px;
+  }
+  .toggle.menu-button {
+    margin-right: -40px;
   }
 }

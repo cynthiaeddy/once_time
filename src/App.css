@@ -2,19 +2,11 @@
   font-family: 'ACaslonPro-Regular';
   src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
 }
-/* @font-face {
-  font-family: ACaslonPro-Regular;
-  src: url('./fonts/ACaslonPro-Regular.otf') format('opentype');
-} */
 
 @font-face {
   font-family: 'Springville-Regular3';
   src: url('./fonts/Springville-Regular3.otf') format('opentype');
 }
-/* @font-face {
-  font-family: Springville-Regular3;
-  src: url('./fonts/Springville-Regular3.otf') format('opentype');
-} */
 
 * {
   box-sizing: border-box;
@@ -27,7 +19,6 @@ body {
   padding: 0;
   overscroll-behavior: none;
   overflow: visible;
-  /* overscroll-behavior: none; */
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
@@ -81,11 +72,10 @@ a {
   overflow-x: hidden;
   overflow: hidden;
 }
+
 .inner-container {
   overflow-y: scroll;
   height: 100%;
-  /* position: absolute; */
-  /* width: 100%; */
   overflow-x: hidden;
   position: relative;
 }

@@ -30,11 +30,7 @@
   width: 10px;
   height: 10px;
 }
-.copy {
-  position: absolute;
-  color: #fff;
-  top: 340px;
-}
+
 /* Carousel 4:3 ratio */
 @media (max-width: 775px) {
   /* .carousel-wrapper {

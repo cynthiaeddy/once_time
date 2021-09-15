@@ -94,7 +94,7 @@ class Footer extends React.Component {
                     {this.state.emailError}
                   </span>
                 </pre>
-                <button type='submit' className='btn' id='btn'>
+                <button type='submit' className='btn'>
                   Submit
                 </button>
               </form>

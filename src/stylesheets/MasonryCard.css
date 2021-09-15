@@ -8,10 +8,10 @@ html {
   box-sizing: inherit;
 }
 
-p.pHero {
+p.hero-p {
   width: 450px;
 }
-.copy {
+.hero-copy {
   position: absolute;
   color: #fff;
   top: 330px;
@@ -85,32 +85,25 @@ h2 a:hover {
   .masonry-container {
     margin-top: -110px;
   }
-  p.pHero {
-    width: 90%;
+  .wrapper {
+    margin-top: 790px;
+  }
+  .masonry {
+    column-count: 1;
+  }
+  img.card-img {
+    width: 600px;
   }
   h1 {
     font-size: 50px;
   }
-  .masonry {
-    column-count: 1;
-  }
-  img.card-img {
-    width: 600px;
-  }
   h2 {
     font-size: 35px;
   }
+  p.hero-p {
+    width: 90%;
+  }
 }
-
-/* Masonry on mobile */
-/* @media (max-width: 767px) {
-  .masonry {
-    column-count: 1;
-  }
-  img.card-img {
-    width: 600px;
-  }
-} */
 
 /* Masonry on tablets */
 @media only screen and (min-width: 481px) and (max-width: 1023px) {

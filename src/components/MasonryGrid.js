@@ -41,7 +41,7 @@ class MasonryGrid extends React.Component {
     return (
       <>
         <div className='masonry-container'>
-          <div className='copy'>
+          <div className='hero-copy'>
             <h1>
               {firstLine}
               <br />
@@ -53,7 +53,7 @@ class MasonryGrid extends React.Component {
               {dateRest}
             </h3>
 
-            <p className='pHero'>{this.props.text.subtitle}</p>
+            <p className='hero-p'>{this.props.text.subtitle}</p>
           </div>
           <div className='wrapper'>
             <div className='masonry bordered'>{this.renderCards()}</div>

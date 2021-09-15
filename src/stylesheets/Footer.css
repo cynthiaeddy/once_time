@@ -20,7 +20,7 @@ input {
   font-family: 'ACaslonPro-Regular';
   font-weight: lighter;
 }
-.btn#btn {
+.btn {
   width: 96px;
   background: #000;
   height: 38px;
@@ -58,12 +58,17 @@ input {
   color: #000;
 }
 .newsletter-footer {
-  margin-top: 50px;
-  padding-bottom: 80px;
+  margin-top: 30px;
+  padding-bottom: 50px;
   margin-right: 0;
   text-align: center;
   margin-left: 10px;
 }
+.newsletter-info p {
+  margin: 0;
+  margin-bottom: 2px;
+}
+
 .newsletter-footer a {
   border-bottom: 1px solid #000;
   padding-bottom: 1px;
@@ -75,15 +80,6 @@ input {
 #userEmail {
   border: 1px solid black;
   background: transparent;
-}
-
-input:focus,
-input #userEmail .userEmail:focus,
-select#userEmail .userEmail:focus,
-textarea#userEmail .userEmail:focus,
-button#userEmail .userEmail:focus {
-  outline: none;
-  background: none;
 }
 
 .form-control:focus,
