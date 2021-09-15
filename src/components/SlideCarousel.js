@@ -7,7 +7,7 @@ const SlideCarousel = (props) => {
   let mySlides = props.slides.map((slide, idx) => {
     return (
       <div key={idx}>
-        <img src={slide.image} alt={slide.alt} />
+        <img className='resize' src={slide.image} alt={slide.alt} />
         <div className='overlay'></div>
       </div>
     )

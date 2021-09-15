@@ -81,6 +81,10 @@ input {
   border: 1px solid black;
   background: transparent;
 }
+#userEmail:focus-visible {
+  /* outline-color: rgb(163, 153, 153); */
+  outline-width: 0;
+}
 
 .form-control:focus,
 .form-control:active {
@@ -123,4 +127,13 @@ input {
     width: 250px;
     line-height: 1.5;
   }
+}
+
+.validate {
+  font-weight: bold;
+  color: grey;
+  position: absolute;
+  margin: auto;
+  left: 40%;
+  line-height: 2;
 }

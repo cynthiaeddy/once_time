@@ -15,6 +15,9 @@ class Footer extends React.Component {
 
   async handleSubmit(e, email) {
     e.preventDefault()
+    if (!this.validateEmail(email)) {
+      return false
+    }
     try {
       const response = await fetch(
         `https://s0nshulo19.execute-api.us-east-1.amazonaws.com/default/code-challenge`,
@@ -33,9 +36,9 @@ class Footer extends React.Component {
         throw new Error('Could not save email')
       } else {
         this.setState({
-          isSuccessfullySubmitted: true,
+          emailError: 'Thank you for subscribing',
         })
-        alert('Thank you for subscribing')
+        // alert('Thank you for subscribing')
       }
     } catch (err) {
       console.log(err)
@@ -48,16 +51,18 @@ class Footer extends React.Component {
     })
   }
 
-  validateEmail = (e) => {
-    const email = e.target.value
+  validateEmail = (email) => {
+    // const email = e.target.value
     if (validator.isEmail(email)) {
       this.setState({
         emailError: 'Valid email',
       })
+      return true
     } else {
       this.setState({
         emailError: 'Please enter a valid email',
       })
+      return false
     }
   }
   render() {
@@ -79,18 +84,18 @@ class Footer extends React.Component {
                     placeholder='Email'
                     onChange={(e) => {
                       this.updateEmail(e)
-                      this.validateEmail(e)
+                      this.validateEmail(e.target.value)
                     }}></input>{' '}
                   <br />
-                  <span
-                    style={{
+                  <span className='validate'>
+                    {/* style={{
                       fontWeight: 'bold',
                       color: 'grey',
                       position: 'absolute',
                       margin: 'auto',
                       maxRight: '45%',
                       lineHeight: '2',
-                    }}>
+                    }}> */}
                     {this.state.emailError}
                   </span>
                 </pre>
@@ -99,10 +104,10 @@ class Footer extends React.Component {
                 </button>
               </form>
               <div className='successful-submit'>
-                hi
-                {this.state.isSuccessfullySubmitted
+                {/* hi */}
+                {/* {this.state.isSuccessfullySubmitted
                   ? 'Thank you for subscribing'
-                  : ''}
+                  : ''} */}
               </div>
             </div>
           </div>

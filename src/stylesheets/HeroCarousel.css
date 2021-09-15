@@ -33,20 +33,27 @@
 
 /* Carousel 4:3 ratio */
 @media (max-width: 775px) {
+  .carousel > .slider-wrapper {
+    width: 100vw;
+    height: 75vw;
+  }
   /* .carousel-wrapper {
     width: 100%;
     padding-bottom: 75%;
   } */
-
-  .carousel-wrapper,
+  .carousel .slide img.resize {
+    height: 75vw;
+    width: auto;
+  }
+  /* .carousel-wrapper,
   .carousel,
   .carousel > .slider-wrapper,
   .carousel > .slider-wrapper > .slider {
     /* height: 100%; */
-    /* width: 100%; */
-    /* padding-bottom: 75%; */
-  }
+  /* width: 100%; */
+  /* padding-bottom: 75%; */
 }
+/* } */
 @media (max-width: 480px) {
   .carousel-wrapper {
     margin-top: 50px;
