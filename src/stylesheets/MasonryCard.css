@@ -98,9 +98,7 @@ h2 a:hover {
   .wrapper {
     padding-top: 95%;
   }
-  /* .wrapper {
-    margin-top: 790px;
-  } */
+
   .masonry {
     column-count: 1;
   }

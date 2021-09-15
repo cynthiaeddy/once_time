@@ -42,21 +42,7 @@ input {
 .newsletter-info p {
   margin: 18px;
 }
-::placeholder {
-  /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: #000;
-  opacity: 1; /* Firefox */
-}
 
-:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #000;
-}
-
-::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #000;
-}
 .newsletter-footer {
   margin-top: 30px;
   padding-bottom: 50px;
@@ -81,8 +67,8 @@ input {
   border: 1px solid black;
   background: transparent;
 }
+/* get rid of browser blue outline */
 #userEmail:focus-visible {
-  /* outline-color: rgb(163, 153, 153); */
   outline-width: 0;
 }
 .validate {
@@ -115,24 +101,28 @@ input {
 }
 
 @media (min-width: 320px) and(max-width: 480px) {
-  .newsletter {
+  /* a {
+    line-height: 2;
+  } */
+  /* .newsletter {
     width: 320px;
     margin: auto;
-  }
-  input {
+  } */
+  /* input {
     width: 200px;
   }
   button.btn#btn {
     width: 60px;
-  }
-  pre .form input#userEmail.userEmail {
+  } */
+  /* pre .form input#userEmail.userEmail {
     width: 100px;
-  }
-  form.form {
+  } */
+  /* form.form {
     padding-right: 60px;
-  }
+  } */
   .newsletter-footer {
-    width: 250px;
-    line-height: 1.5;
+    /* width: 250px;
+    line-height: 1.5; */
+    padding-bottom: 200px;
   }
 }
