@@ -7,7 +7,6 @@ class Footer extends React.Component {
   state = {
     email: '',
     emailError: '',
-    isSuccessfullySubmitted: false,
   }
 
   async handleSubmit(e, email) {
