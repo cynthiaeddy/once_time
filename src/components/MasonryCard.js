@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylesheets/MasonryCard.css'
+import '../stylesheets/MasonryCard.scss'
 import { month_name } from './helper_functions'
 const MasonryCard = (props) => {
   const dateArr = props.date.split('/')

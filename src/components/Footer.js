@@ -1,7 +1,7 @@
 import React from 'react'
 import validator from 'validator'
 
-import '../stylesheets/Footer.css'
+import '../stylesheets/Footer.scss'
 
 class Footer extends React.Component {
   state = {

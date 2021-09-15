@@ -1,14 +1,16 @@
 li {
   list-style: none;
-}
-li a {
-  text-decoration: none;
-  color: #767676;
-}
-li a:visited,
-li a:hover,
-li a:focus {
-  color: #767676;
+
+  a {
+    text-decoration: none;
+    color: #767676;
+
+    &:visited,
+    &:hover,
+    &:focus {
+      color: #767676;
+    }
+  }
 }
 
 ul {
@@ -24,6 +26,7 @@ ul {
   position: fixed;
   z-index: 10;
 }
+
 .navBar {
   width: 81%;
   height: 100%;
@@ -58,9 +61,11 @@ ul {
 .topLine {
   margin-top: -12px;
 }
+
 .middleLine {
   margin-top: -6px;
 }
+
 .bottomLine {
   margin-top: 0px;
 }
@@ -79,12 +84,15 @@ ul {
   .header {
     height: 50px;
   }
+
   .logo {
     width: 110px;
   }
+
   h6 {
     margin-right: 10px;
   }
+
   .toggle.menu-button {
     margin-right: -40px;
     margin-top: 10px;
