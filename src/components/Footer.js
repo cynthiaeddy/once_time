@@ -96,7 +96,7 @@ class Footer extends React.Component {
           </div>
         </div>
 
-        <h6 className='newsletter-footer'>
+        <h6 className='newsletter-footer safari-only'>
           <span id='footer-span'>
             <a>@2021 — SPARTA PLAESENT</a>
           </span>

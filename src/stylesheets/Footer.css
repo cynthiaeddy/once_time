@@ -99,30 +99,34 @@ input {
     opacity: 1;
   }
 }
-
-@media (min-width: 320px) and(max-width: 480px) {
-  /* a {
+@media screen and (max-width: 480px) {
+  _::-webkit-full-page-media,
+  _:future,
+  :root .safari_only {
+    padding-bottom: 180px;
+  }
+}
+/* @media (min-width: 320px) and(max-width: 480px) { */
+/* a {
     line-height: 2;
   } */
-  /* .newsletter {
+/* .newsletter {
     width: 320px;
     margin: auto;
   } */
-  /* input {
+/* input {
     width: 200px;
   }
   button.btn#btn {
     width: 60px;
   } */
-  /* pre .form input#userEmail.userEmail {
+/* pre .form input#userEmail.userEmail {
     width: 100px;
   } */
-  /* form.form {
+/* form.form {
     padding-right: 60px;
   } */
-  .newsletter-footer {
-    /* width: 250px;
+/* .newsletter-footer { */
+/* width: 250px;
     line-height: 1.5; */
-    padding-bottom: 200px;
-  }
-}
+/* padding-bottom: 200px; */
