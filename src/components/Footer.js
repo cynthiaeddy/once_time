@@ -63,32 +63,30 @@ class Footer extends React.Component {
   render() {
     return (
       <>
-        <div style={{}}>
-          <div className='newsletter'>
-            <div className='newsletter-info'>
-              <p>Sign up for our Newsletter</p>
-              <form
-                className='form'
-                onSubmit={(e) => this.handleSubmit(e, this.state.email)}>
-                <pre>
-                  <span> </span>
-                  <input
-                    type='text'
-                    id='userEmail'
-                    className='userEmail'
-                    placeholder='Email'
-                    onChange={(e) => {
-                      this.updateEmail(e)
-                      this.validateEmail(e.target.value)
-                    }}></input>{' '}
-                  <br />
-                  <span className='validate'>{this.state.emailError}</span>
-                </pre>
-                <button type='submit' className='btn'>
-                  Submit
-                </button>
-              </form>
-            </div>
+        <div className='newsletter'>
+          <div className='newsletter-info'>
+            <p>Sign up for our Newsletter</p>
+            <form
+              className='form'
+              onSubmit={(e) => this.handleSubmit(e, this.state.email)}>
+              <pre>
+                <span> </span>
+                <input
+                  type='text'
+                  id='userEmail'
+                  className='userEmail'
+                  placeholder='Email'
+                  onChange={(e) => {
+                    this.updateEmail(e)
+                    this.validateEmail(e.target.value)
+                  }}></input>{' '}
+                <br />
+                <span className='validate'>{this.state.emailError}</span>
+              </pre>
+              <button type='submit' className='btn'>
+                Submit
+              </button>
+            </form>
           </div>
         </div>
 
