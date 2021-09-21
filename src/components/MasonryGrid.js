@@ -4,6 +4,8 @@ import { month_name } from './helper_functions'
 
 import '../stylesheets/MasonryCard.scss'
 
+import Masonry from 'react-masonry-css'
+
 class MasonryGrid extends React.Component {
   renderCards() {
     const cardSort = this.props.cards.sort((a, b) => {
@@ -27,6 +29,11 @@ class MasonryGrid extends React.Component {
   }
 
   render() {
+    const breakpointColumnsObj = {
+      default: 3,
+      1024: 2,
+      480: 1,
+    }
     if (!this.props.text) {
       return null
     }
@@ -56,7 +63,12 @@ class MasonryGrid extends React.Component {
             <p className='hero-p'>{this.props.text.subtitle}</p>
           </div>
           <div className='wrapper'>
-            <div className='masonry'>{this.renderCards()}</div>
+            <Masonry
+              breakpointCols={breakpointColumnsObj}
+              className='my-masonry-grid'
+              columnClassName='my-masonry-grid_column'>
+              {this.renderCards()}
+            </Masonry>
           </div>
         </div>
       </>
