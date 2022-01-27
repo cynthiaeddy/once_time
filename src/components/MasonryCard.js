@@ -1,7 +1,7 @@
 import React from 'react'
-import '../stylesheets/MasonryCard.scss'
+import '../stylesheets/MasonryCard.css'
 import { month_name } from './helper_functions'
-const MasonryCard = (props) => {
+const MasonryCard = props => {
   const dateArr = props.date.split('/')
   const dateMonth = dateArr.slice(0, 1).join()
   const dateRest = dateArr.slice(1).join(', ')

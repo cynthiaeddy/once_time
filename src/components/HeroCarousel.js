@@ -1,5 +1,5 @@
 import React from 'react'
-import '../stylesheets/HeroCarousel.scss'
+import '../stylesheets/HeroCarousel.css'
 import SlideCarousel from './SlideCarousel'
 
 class HeroCarousel extends React.Component {

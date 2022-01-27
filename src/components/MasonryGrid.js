@@ -2,7 +2,7 @@ import React from 'react'
 import MasonryCard from './MasonryCard'
 import { month_name } from './helper_functions'
 
-import '../stylesheets/MasonryCard.scss'
+import '../stylesheets/MasonryCard.css'
 
 import Masonry from 'react-masonry-css'
 

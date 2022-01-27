@@ -1,7 +1,7 @@
 import React from 'react'
 import validator from 'validator'
 
-import '../stylesheets/Footer.scss'
+import '../stylesheets/Footer.css'
 
 class Footer extends React.Component {
   state = {
@@ -40,13 +40,13 @@ class Footer extends React.Component {
     }
   }
 
-  updateEmail = (e) => {
+  updateEmail = e => {
     this.setState({
       email: e.target.value,
     })
   }
 
-  validateEmail = (email) => {
+  validateEmail = email => {
     // const email = e.target.value
     if (validator.isEmail(email)) {
       this.setState({
@@ -68,7 +68,7 @@ class Footer extends React.Component {
             <p>Sign up for our Newsletter</p>
             <form
               className='form'
-              onSubmit={(e) => this.handleSubmit(e, this.state.email)}>
+              onSubmit={e => this.handleSubmit(e, this.state.email)}>
               <pre>
                 <span> </span>
                 <input
@@ -76,7 +76,7 @@ class Footer extends React.Component {
                   id='userEmail'
                   className='userEmail'
                   placeholder='Email'
-                  onChange={(e) => {
+                  onChange={e => {
                     this.updateEmail(e)
                     this.validateEmail(e.target.value)
                   }}></input>{' '}

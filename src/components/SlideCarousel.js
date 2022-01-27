@@ -1,8 +1,8 @@
 import React from 'react'
 import { Carousel } from 'react-responsive-carousel'
-import '../stylesheets/HeroCarousel.scss'
+import '../stylesheets/HeroCarousel.css'
 
-const SlideCarousel = (props) => {
+const SlideCarousel = props => {
   let mySlides = props.slides.map((slide, idx) => {
     return (
       <div key={idx}>

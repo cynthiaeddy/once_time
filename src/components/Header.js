@@ -1,7 +1,7 @@
 import React from 'react'
 import Hamburger from './Hamburger'
 import logo from '.././assets/logo.svg'
-import '../stylesheets/Header.scss'
+import '../stylesheets/Header.css'
 
 const Header = () => {
   return (

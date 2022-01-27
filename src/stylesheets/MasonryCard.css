@@ -29,21 +29,13 @@ p.hero-p {
 }
 
 /* Masonry grid */
-.masonry {
-  transition: all 0.5s ease-in-out;
-  column-gap: 55px;
-  column-fill: initial;
-}
+/* // .masonry {
+//   transition: all 0.5s ease-in-out;
+//   column-gap: 55px;
+//   column-fill: initial;
+// } */
 
 /* Masonry item */
-.masonry .card {
-  margin-bottom: 30px;
-  display: inline-block; /* Fix the misalignment of items */
-  vertical-align: top; /* Keep the item on the very top */
-  padding-bottom: 35px;
-  margin-bottom: 50px;
-  border-bottom: 1px solid #dbdbdb;
-}
 
 img.card-img {
   max-width: 100%;
@@ -58,6 +50,7 @@ img.card-img {
 .card p {
   font-size: 14px;
   margin-top: 25px;
+  margin-bottom: 50px;
 }
 .card p span {
   border-bottom: 1px solid #767676;
@@ -107,9 +100,6 @@ h2 a:hover {
     padding-top: 95%;
   }
 
-  .masonry {
-    column-count: 1;
-  }
   img.card-img {
     width: 600px;
   }
@@ -127,10 +117,7 @@ h2 a:hover {
   .card h6 {
     margin: 30px 0 18px 0;
   }
-  .masonry .card {
-    padding-bottom: 26px;
-    margin-bottom: 37px;
-  }
+
   p.hero-p {
     width: 95%;
     margin: 0;
@@ -138,43 +125,64 @@ h2 a:hover {
   }
 }
 
-/* Masonry on tablets */
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .masonry {
-    column-count: 2;
-    column-gap: 12%;
-  }
-}
-
-/* Masonry on big screens */
-@media only screen and (min-width: 1024px) {
-  .desc {
-    font-size: 1.25em;
-  }
-
-  .intro {
-    letter-spacing: 1px;
-  }
-
-  .masonry {
-    column-count: 3;
-  }
-}
 .my-masonry-grid {
   display: -webkit-box; /* Not needed if autoprefixing */
   display: -ms-flexbox; /* Not needed if autoprefixing */
   display: flex;
-  margin-left: -30px; /* gutter size offset */
+  margin-left: -7%; /* gutter size offset */
   width: auto;
 }
 .my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
+  padding-left: 7%; /* gutter size */
   background-clip: padding-box;
 }
 
 /* Style your items */
-.my-masonry-grid_column > div {
+.my-masonry-grid_column .card {
   /* change div to reference your elements you put in <Masonry> */
-  // background: grey;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
+  border-bottom: 1px solid #dedbdb;
 }
+/* // @media only screen and (min-width: 481px) and (max-width: 1024px) {
+//   .my-masonry-grid {
+//     // column-count: 2;
+//     // column-gap: 12%;
+//     margin-left: -13%;
+//   }
+//   .my-masonry-grid div.my-masonry-grid_column {
+//     padding-left: -12%; /* gutter size */
+/* //     // background-clip: padding-box;
+//   }
+// }
+// @media only screen and(max-width: 1024px) {
+//   .my-masonry-grid {
+//     width: 100%;
+//     margin: 0;
+//     padding: 0;
+//   }
+//   .my-masonry-grid_column {
+//     padding: 0;
+//   }
+// } */
+/* */
+/* */
+/* Optional, different gutter size on mobile */
+/* @media (max-width: 1024px) {
+  .my-masonry-grid {
+    // margin-left: -15%;
+  }
+  .my-masonry-grid_column {
+    // padding-left: -15%;
+  }
+/* } */
+/* @media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -30px; /* gutter size offset */
+/* }
+  .my-masonry-grid_column {
+    padding-left: 30px; /* gutter size offset */
+/* } */
+/* // .my-masonry-grid_column > div {
+  //   margin-bottom: 30px; space between items */
+/* // } */
+/* /* }   */

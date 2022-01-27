@@ -24,12 +24,12 @@
   right: 47%;
   top: 5px;
 
-  li.dot {
+  /* li.dot {
     background: #e1e1e1;
     box-shadow: none;
     width: 10px;
     height: 10px;
-  }
+  } */
 }
 
 /* Carousel 4:3 ratio */
